@@ -121,19 +121,11 @@ nav ul li:hover > .within {
   float: none;
 }
 
-#leftside {
+#rightside {
   padding: 1em;
-  float: left;
+  float: right;
   min-height: 100%;
-  width: 19.932%;
-}
-
-#leftside ul {
-  list-style-type: none;
-}
-
-#leftside ul li {
-  margin: .5em 0;
+  width: 35%;
 }
 
 a {
@@ -148,37 +140,83 @@ a:hover, a:focus {
   color: crimson;
 }
 
-#rightside {
-  padding: 1em;
-  float: right;
-  margin-right: .15em;
-  min-height: 100%;
-  width: 13.027%;
-}
-
 section {
   min-height: 100%;
-  margin-left: 24.136%;
-  margin-right: 17.268%;
-  padding: .5rem;
-  border-left: 2px solid black;
+  margin-right: 37.5%;
+  padding-left: 1em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  padding-right: 1em;
   border-right: 2px solid black;
 }
 
 section h1, section h2 {
-  margin-bottom: .25rem;
+  margin-bottom: .25em;
+  
 }
 
-section p {
-  padding-bottom: .25em;
+/* the styles for the form */
+fieldset {
+    margin-bottom: .5em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+legend {
+    color: firebrick;
+    font-weight: bold;
+    font-size: 100%;
+    margin-bottom: .5em;
+}
+label {
+    float: left;
+    width: 12em;
+    text-align: right;
+}
+label, input, select {
+	font-size: 95%;
+}
+input, select {
+    width: 15em;
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+input:required, input[required] {
+  border: 2px solid #800000;
+}
+input:valid {
+	border: 1px solid black;
+}
+input:invalid {
+  border: 2px solid #800000;
+	box-shadow: none;
+}
+br {
+    clear: both;
+}
+#buttons input {
+	width: 10em;
 }
 
-section img {
-  float: right;
-  max-height: 10%;
-  max-width: 10%;
-  margin: .25em;
+#money label {
+  clear: both;
 }
+
+#money input {
+  width: auto;
+  margin-left: 3em;
+  clear: both;
+}
+
+#month {
+  width: 7em;
+}
+
+#year {
+  width: 5em;
+}
+
 
 section a {
   font-weight: bold;
@@ -203,7 +241,10 @@ section a {
 }
 
 #subs th, #subs td {
-  padding: .5em;
+  padding-left: .15em;
+  padding-right: .15em;
+  padding-top: .5em;
+  padding-bottom: .5em;
 }
 
 footer {

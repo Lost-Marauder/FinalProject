@@ -11,61 +11,112 @@
 </head>
 <body>
 <header>
-  <img id="hotbar" src="images/hotbar.png" alt="Cart, Contact, About">
-  <h2>Navezgane Survival</h2>
+  <div class="hotbar">
+    <a href="#"><img src="images/faq.png" alt="Frequently Asked Questions"><br/>FAQ</a>
+    <a href="#"><img src="images/contact.png" alt="Contact"><br/>Contact</a>
+    <a href="#"><img src="images/checkout.png" alt="Cart"><br/>Cart</a>
+  </div>
+  <h2><a href="index.html">Navezgane Survival</a></h2>
   <h3>For when you only have 7 days to survive!</h3>
 </header>
 <main>
 <nav id="nav_menu">
   <ul>
-    <li><a href="products/basic.html">Basics</a></li>
-    <li><a href="products/food.html">Food and Medical</a>
-      <ul id="within">
-        <li><a href="products/food/hunt.html">Hunting</a></li>
-        <li><a href="products/food/farm.html">Farming</a></li>
-        <li><a href="products/food/eat.html">Canned Goods</a></li>
-        <li><a href="products/food/heal.html">Medical</a></li>
+    <li><a href="#">Basics</a></li>
+    <li><a href="#">Consumables</a>
+      <ul class="within">
+        <li><a href="#">Hunting</a></li>
+        <li><a href="#">Farming</a></li>
+        <li><a href="#">Canned Goods</a></li>
+        <li><a href="#">Medical</a></li>
       </ul></li>
-    <li><a href="products/tools.html">Tools</a>
-      <ul id="within">
-        <li><a href="products/tools/build.html">Build</a></li>
-        <li><a href="products/tools/break.html">Break</a></li>
+    <li><a href="#">Tools</a>
+      <ul class="within">
+        <li><a href="#">Build</a></li>
+        <li><a href="#">Break</a></li>
       </ul></li>
-    <li><a href="products/defense.html">Defensive</a>
-      <ul id="within">
-        <li><a href="products/defense/blunt.html">Blunt Force</a></li>
-        <li><a href="products/defense/range.html">Ranged</a></li>
-        <li><a href="products/defense/trap.html">Traps</a></li>
-        <li><a href="products/defense/armor.html">Armor</a></li>
-        <li><a href="products/defense/boom.html">Explosives</a></li>
+    <li><a href="#">Defensive</a>
+      <ul class="within">
+        <li><a href="#">Blunt Force</a></li>
+        <li><a href="#">Ranged</a></li>
+        <li><a href="#">Traps</a></li>
+        <li><a href="#">Armor</a></li>
+        <li><a href="#">Explosives</a></li>
       </ul>
     </li>
-    <li><a href="products/scheme.html">Schematics</a></li>
+    <li><a href="#">Schematics</a></li>
   </ul>
 </nav>
 <aside id="leftside">
-<h2>For New Survivors:</h2>
-<ul>
-  <li><a href="tips/first7.html">Surviving Your First Week</a></li>
-  <li><a href="tips/schemehunt.html">Schematics and Where to Find Them</a></li>
-  <li><a href="tips/shelter.html">Best Biomes for Bases</a></li>
-  <li><a href="tips/dig.html">Six Feet Under: Digging for Dummies</a></li>
-  <li>More to Come!</li>
-</ul>
+  <h2>For New Survivors:</h2>
+  <ul>
+    <li><a href="#">Surviving Your First Week</a></li>
+    <li><a href="#">Schematics and Where to Find Them</a></li>
+    <li><a href="#">Best Biomes for Bases</a></li>
+    <li><a href="#">Six Feet Under: Digging for Dummies</a></li>
+    <li>More to Come!</li>
+  </ul>
 </aside>
 <aside id="rightside">
-<h2>Special Offers</h2>
-<h3>No Offers Yet, Check Back Soon!</h3>
+  <h2>Special Offers</h2>
+  <h3>No Offers Yet, Check Back Soon!</h3>
 </aside>
 <section>
-<img src="images/zombie1.jpg" alt=" ">
-<h1>Welcome to The End of the World!</h1>
-<p>If you're reading this, it's likely that the world has succumbed to a zombie apocalypse and you're one of the last remnants of the human race. Lucky for you, Navezgane Survival is here to make surviving just a little easier. Our most popular product is our air drop subscription, flying in within 5 kilometers of your location at intervals you choose, from every day to every week! We also offer customization of these supply drops, for when you just need that one part or are about to bleed out!<br/>Next time you're low on food, surrounded by a blood moon horde or just looking to complete your outfit, remember Navezgane Survival!</p>
+  <img src="images/zombie1.jpg" alt=" ">
+  <h1>Welcome to The End of the World!</h1>
+  <p>If you're reading this, it's likely that the world has succumbed to a zombie apocalypse and you're one of the last remnants of the human race. Lucky for you, Navezgane Survival is here to make surviving just a little easier. Our most popular product is our air drop subscription for just a few dukes(d$) per month, flying in within 5 kilometers of your location at intervals you choose, from every day to every month! We also offer customization of these supply drops with certain tiers, for when you just need that one part or are about to bleed out!<br/></p>
+  <h2>Air Drop Subscriptions</h2>
+  <p>Navezgane Survival offers the finest in air supply drops, with varying intervals for the lowest prices in the apocalypse! <a href="subscribe.html" >Click here to subscribe!</a></p>
+
+  <table id="subs">
+    <tr id="head">
+      <th>Rank</th>
+      <th>Price</th>
+      <th>Drop Intervals</th>
+      <th>Customizable?</th>
+    </tr>
+    <tr>
+      <td>Scavenger</td>
+      <td>No monthly fee, each request costs d$300.</td>
+      <td>Request only.</td>
+      <td>No.</td>
+    </tr>
+    <tr>
+      <td>Adventurer</td>
+      <td>d$10 per month, d$270 per extra request</td>
+      <td>Every 28 days, plus requested drops.</td>
+      <td>Yes.</td>
+    </tr>
+    <tr>
+      <td>Nomad</td>
+      <td>d$20 per month, d$240 per extra request</td>
+      <td>Every 14 days, plus extra requested drops.</td>
+      <td>Yes.</td>
+    </tr>
+    <tr>
+      <td>Warrior</td>
+      <td>d$30 per month, d$210 per extra request</td>
+      <td>Every week, plus extra requested drops.</td>
+      <td>Yes.</td>
+    </tr>
+    <tr>
+      <td>Survivalist</td>
+      <td>d$40 per month, d$180 per extra request</td>
+      <td>Every three days, plus extra requested drops.</td>
+      <td>Yes.</td>
+    </tr>
+    <tr>
+      <td>Insane</td>
+      <td>d$50 per month, d$150 per extra request</td>
+      <td>Daily.</td>
+      <td>Yes.</td>
+    </tr>
+  </table>
 
 </section>
 </main>
 <footer>
-<p>Placeholder Footer</p>
+  <p>Placeholder Footer</p>
 </footer>
 </body>
 </html>

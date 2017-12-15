@@ -1,0 +1,169 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Navezgane Survival</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/form.css">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  
+</head>
+<body>
+<header>
+  <div class="hotbar">
+    <a href="#"><img src="images/faq.png" alt="Frequently Asked Questions"><br/>FAQ</a>
+    <a href="#"><img src="images/contact.png" alt="Contact"><br/>Contact</a>
+    <a href="#"><img src="images/checkout.png" alt="Cart"><br/>Cart</a>
+  </div>
+  <h2><a href="index.html">Navezgane Survival</a></h2>
+  <h3>For when you only have 7 days to survive!</h3>
+</header>
+<main>
+<nav id="nav_menu">
+  <ul>
+    <li><a href="#">Basics</a></li>
+    <li><a href="#">Consumables</a>
+      <ul class="within">
+        <li><a href="#">Hunting</a></li>
+        <li><a href="#">Farming</a></li>
+        <li><a href="#">Canned Goods</a></li>
+        <li><a href="#">Medical</a></li>
+      </ul></li>
+    <li><a href="#">Tools</a>
+      <ul class="within">
+        <li><a href="#">Build</a></li>
+        <li><a href="#">Break</a></li>
+      </ul></li>
+    <li><a href="#">Defensive</a>
+      <ul class="within">
+        <li><a href="#">Blunt Force</a></li>
+        <li><a href="#">Ranged</a></li>
+        <li><a href="#">Traps</a></li>
+        <li><a href="#">Armor</a></li>
+        <li><a href="#">Explosives</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Schematics</a></li>
+  </ul>
+</nav>
+<aside id="rightside">
+<h2>Subscription Rates</h2>
+<table id="subs">
+<tr id="head">
+  <th>Rank</th>
+  <th>Price</th>
+  <th>Interval</th>
+  <th>Custom?</th>
+</tr>
+<tr>
+  <td>Scavenger</td>
+  <td>d$0/month, d$300 per request.</td>
+  <td>Request only.</td>
+  <td>No.</td>
+</tr>
+<tr>
+  <td>Adventurer</td>
+  <td>d$10/month, d$270 per request</td>
+  <td>Every 28 days, plus requests.</td>
+  <td>Yes.</td>
+</tr>
+<tr>
+  <td>Nomad</td>
+  <td>d$20/month, d$240 per request</td>
+  <td>Every 14 days, plus requests.</td>
+  <td>Yes.</td>
+</tr>
+<tr>
+  <td>Warrior</td>
+  <td>d$30 per month, d$210 per request</td>
+  <td>Every week, plus requests.</td>
+  <td>Yes.</td>
+</tr>
+<tr>
+  <td>Survivalist</td>
+  <td>d$40 per month, d$180 per request</td>
+  <td>Every 3 days, plus requests.</td>
+  <td>Yes.</td>
+</tr>
+<tr>
+  <td>Insane</td>
+  <td>d$50 per month, no requests</td>
+  <td>Daily.</td>
+  <td>Yes.</td>
+</tr>
+</table>
+</aside>
+  <section>
+    <h1>Air Drop Subscription</h1>
+    <form action="submit.html" method="get" name="registration_form" id="registration_form">
+      <fieldset>
+        <legend>Member Information</legend>
+        <label for="first_name">First Name:</label>
+        <input type="text" name="first_name" id="first_name" required><br>
+        <label for="last_name">Last Name:</label>
+        <input type="text" name="last_name" id="last_name" required><br>
+        <label for="address">Address:</label>
+        <input type="text" name="address" id="address" placeholder="5 Raner Boulevard"><br>
+        <label for="city">Nearest City:</label>
+        <input type="text" name="city" id="city" required placeholder="Perishton"><br>
+        <label for="settle">Settlement:</label>
+        <input type="text" name="settle" id="settle" required placeholder="White River Settlement"><br>
+        <label for="biome_type">Biome:</label>
+        <select name="biome_type" id="biome_type" required>
+            <option value="nat">National Forest</option>
+            <option value="burn">Burning Forest</option>
+            <option value="tree">Forest</option>
+            <option value="plain">Plains</option>
+            <option value="sand">Desert</option>
+            <option value="cold">Taiga</option>
+            <option value="rads">Irradiation Zone</option>
+        </select><br/>
+        <label for="coord">Approximate Coordinates:</label>
+        <input type="num" name="coord" id="coord" placeholder="N- W-" required><br>
+      </fieldset>
+      <fieldset>
+        <legend>Subscription Information</legend>
+        <label for="membership_type">Subscription Type:</label>
+        <select name="membership_type" id="membership_type">
+            <option value="1">Scavenger</option>
+            <option value="2">Adventurer</option>            
+            <option value="3">Nomad</option>
+            <option value="4">Warrior</option>
+            <option value="5">Survivalist</option>            
+            <option value="6">Insane</option>
+        </select><br>
+      </fieldset>
+      <fieldset id="money">
+        <legend>Payment Form</legend>
+        <label for="dukes">Dukes</label>
+        <input type="radio" name="money" id="dukes" value="money"><br/>
+        <label for="trade">Trade</label>
+        <input type="radio" name="money" id="trade" value="money">
+      </fieldset>
+      <fieldset>
+        <legend>Trader Identification</legend>
+        <label for="biome_type">Location:</label>
+        <select name="biome_type" id="biome_type">
+            <option value="burn">Burning Forest</option>
+            <option value="nat">National Forest</option>
+            <option value="tree">Forest</option>
+            <option value="plain">Plains</option>
+            <option value="sand">Desert</option>
+            <option value="cold">Taiga</option>
+        </select><br/>
+        <label for="name">Trader Name:</label>
+        <input type="text" name="name" id="name" placeholder="Trader Bob">
+      </fieldset>
+      <fieldset id="buttons">
+        <legend>Submit Your Subscription</legend>
+        <label>&nbsp;</label>
+        <input type="submit" id="submit" value="Submit">
+        <input type="reset" id="reset" value="Reset Fields"><br/>
+      </fieldset>
+    </form>
+  </section>
+</main>
+<footer>
+   <p>Placeholder Footer</p>
+</footer>
+</body>
+</html>
